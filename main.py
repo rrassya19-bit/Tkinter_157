@@ -108,3 +108,10 @@ top.bind("<KP_Enter>", hasilPrediksi)
 
 top.update_idletasks()
 
+try:
+    import ctypes
+    hwnd = ctypes.windll.user32.GetParent(top.winfo_id())
+    ctypes.windll.dwmapi.DwmSetWindowAttribute(hwnd, 20, ctypes.byref(ctypes.c_int(1)), ctypes.sizeof(ctypes.c_int))
+except Exception:
+    pass
+
