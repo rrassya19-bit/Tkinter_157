@@ -115,3 +115,7 @@ try:
 except Exception:
     pass
 
+x = (top.winfo_screenwidth() - top.winfo_width()) // 2
+y = (top.winfo_screenheight() - top.winfo_height()) // 2
+top.geometry("+" + str(x) + "+" + str(y))
+
