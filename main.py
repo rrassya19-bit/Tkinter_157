@@ -67,3 +67,6 @@ judul = tk.Label(utama, text="Aplikasi Prediksi Prodi Pilihan",
                  font=("Segoe UI", 18, "bold"), bg=BG, fg=TEKS, anchor="w")
 judul.pack(fill=tk.X)
 
+aksen = tk.Frame(utama, bg=AKSEN, height=3, width=48)
+aksen.pack(anchor="w", pady=(8, 22))
+
