@@ -63,3 +63,7 @@ top.config(bg=BG)
 utama = tk.Frame(top, bg=BG)
 utama.pack(padx=36, pady=30)
 
+judul = tk.Label(utama, text="Aplikasi Prediksi Prodi Pilihan",
+                 font=("Segoe UI", 18, "bold"), bg=BG, fg=TEKS, anchor="w")
+judul.pack(fill=tk.X)
+
