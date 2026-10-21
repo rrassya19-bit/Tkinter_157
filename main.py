@@ -121,3 +121,4 @@ top.geometry("+" + str(x) + "+" + str(y))
 
 daftarEntry[0].focus_set()
 
+top.mainloop()
