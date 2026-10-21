@@ -106,4 +106,5 @@ hasil.pack(fill=tk.X, pady=(16, 0))
 top.bind("<Return>", hasilPrediksi)
 top.bind("<KP_Enter>", hasilPrediksi)
 
-t
+top.update_idletasks()
+
