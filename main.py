@@ -89,3 +89,11 @@ for i in range(10):
     E.bind("<FocusIn>", fokusMasuk)
     E.bind("<FocusOut>", fokusKeluar)
     daftarEntry.append(E)
+
+B = tk.Button(utama, text="Hasil Prediksi", font=("Segoe UI", 11, "bold"),
+              bg=AKSEN, fg="white", activebackground=AKSEN_HOVER,
+              activeforeground="white", relief="flat", bd=0, pady=11,
+              cursor="hand2", command=hasilPrediksi)
+B.pack(fill=tk.X, pady=(20, 0))
+B.bind("<Enter>", tombolMasuk)
+B.bind("<Leave>", tombolKeluar)
