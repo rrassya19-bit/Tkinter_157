@@ -74,3 +74,7 @@ kartu = tk.Frame(utama, bg=KARTU, highlightthickness=1,
                  highlightbackground=GARIS, padx=28, pady=20)
 kartu.pack(fill=tk.X)
 
+for i in range(10):
+    L = tk.Label(kartu, text="Nilai Mata Pelajaran " + str(i + 1),
+                 font=("Segoe UI", 10), bg=KARTU, fg=TEKS, anchor="w", width=22)
+    L.grid(row=i, column=0, sticky="w", pady=6)
