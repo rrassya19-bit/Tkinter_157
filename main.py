@@ -60,3 +60,6 @@ top.title("Aplikasi Prediksi Prodi Pilihan")
 top.resizable(False, False)
 top.config(bg=BG)
 
+utama = tk.Frame(top, bg=BG)
+utama.pack(padx=36, pady=30)
+
