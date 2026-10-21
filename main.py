@@ -44,3 +44,6 @@ def hasilPrediksi(event=None):
 def tombolMasuk(e):
     B.config(bg=AKSEN_HOVER)
 
+def tombolKeluar(e):
+    B.config(bg=AKSEN)
+
