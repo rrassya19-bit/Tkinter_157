@@ -19,3 +19,24 @@ def resetHasil(*args):
     for e in daftarEntry:
         e.config(highlightbackground=GARIS)
 
+def hasilPrediksi(event=None):
+    kosong = False
+    diluar = False
+    for e in daftarEntry:
+        nilai = e.get().strip().replace(",", ".")
+        try:
+            angka = float(nilai)
+            if angka < 0 or angka > 100:
+                diluar = True
+                e.config(highlightbackground=MERAH)
+            else:
+                e.config(highlightbackground=GARIS)
+        except ValueError:
+            kosong = True
+            e.config(highlightbackground=MERAH)
+    if kosong:
+        hasil.config(text="Lengkapi 10 nilai berupa angka terlebih dahulu", fg=MERAH)
+    elif diluar:
+        hasil.config(text="Nilai harus berada di antara 0 sampai 100", fg=MERAH)
+    else:
+        hasil.config(text="Prodi Pilihan: Teknologi Informasi", fg=AKSEN_TERANG)
