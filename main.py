@@ -14,3 +14,8 @@ MERAH = "#F47067"
 teksAwal = "Hasil prediksi akan tampil di sini"
 daftarEntry = []
 
+def resetHasil(*args):
+    hasil.config(text=teksAwal, fg=ABU)
+    for e in daftarEntry:
+        e.config(highlightbackground=GARIS)
+
