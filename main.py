@@ -55,3 +55,8 @@ def fokusKeluar(e):
     if e.widget.cget("highlightbackground") != MERAH:
         e.widget.config(highlightbackground=GARIS)
 
+top = tk.Tk()
+top.title("Aplikasi Prediksi Prodi Pilihan")
+top.resizable(False, False)
+top.config(bg=BG)
+
