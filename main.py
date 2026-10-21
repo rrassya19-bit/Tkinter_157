@@ -70,3 +70,7 @@ judul.pack(fill=tk.X)
 aksen = tk.Frame(utama, bg=AKSEN, height=3, width=48)
 aksen.pack(anchor="w", pady=(8, 22))
 
+kartu = tk.Frame(utama, bg=KARTU, highlightthickness=1,
+                 highlightbackground=GARIS, padx=28, pady=20)
+kartu.pack(fill=tk.X)
+
