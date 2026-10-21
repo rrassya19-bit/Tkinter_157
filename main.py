@@ -102,3 +102,8 @@ hasil = tk.Label(utama, text=teksAwal, font=("Segoe UI", 12, "bold"),
                  bg=KARTU, fg=ABU, height=3, highlightthickness=1,
                  highlightbackground=GARIS)
 hasil.pack(fill=tk.X, pady=(16, 0))
+
+top.bind("<Return>", hasilPrediksi)
+top.bind("<KP_Enter>", hasilPrediksi)
+
+t
