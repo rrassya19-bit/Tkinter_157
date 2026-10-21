@@ -40,3 +40,7 @@ def hasilPrediksi(event=None):
         hasil.config(text="Nilai harus berada di antara 0 sampai 100", fg=MERAH)
     else:
         hasil.config(text="Prodi Pilihan: Teknologi Informasi", fg=AKSEN_TERANG)
+
+def tombolMasuk(e):
+    B.config(bg=AKSEN_HOVER)
+
