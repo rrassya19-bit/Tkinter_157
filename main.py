@@ -51,3 +51,7 @@ def fokusMasuk(e):
     if e.widget.cget("highlightbackground") != MERAH:
         e.widget.config(highlightbackground=AKSEN)
 
+def fokusKeluar(e):
+    if e.widget.cget("highlightbackground") != MERAH:
+        e.widget.config(highlightbackground=GARIS)
+
