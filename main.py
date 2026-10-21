@@ -78,3 +78,14 @@ for i in range(10):
     L = tk.Label(kartu, text="Nilai Mata Pelajaran " + str(i + 1),
                  font=("Segoe UI", 10), bg=KARTU, fg=TEKS, anchor="w", width=22)
     L.grid(row=i, column=0, sticky="w", pady=6)
+
+    var = tk.StringVar()
+    var.trace_add("write", resetHasil)
+    E = tk.Entry(kartu, textvariable=var, font=("Segoe UI", 10), width=9,
+                 justify="center", relief="flat", bd=0, bg=KOTAK, fg=TEKS,
+                 insertbackground=TEKS, highlightthickness=1,
+                 highlightbackground=GARIS, highlightcolor=AKSEN)
+    E.grid(row=i, column=1, pady=6, ipady=4)
+    E.bind("<FocusIn>", fokusMasuk)
+    E.bind("<FocusOut>", fokusKeluar)
+    daftarEntry.append(E)
