@@ -47,3 +47,7 @@ def tombolMasuk(e):
 def tombolKeluar(e):
     B.config(bg=AKSEN)
 
+def fokusMasuk(e):
+    if e.widget.cget("highlightbackground") != MERAH:
+        e.widget.config(highlightbackground=AKSEN)
+
