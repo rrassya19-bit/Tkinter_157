@@ -10,3 +10,7 @@ AKSEN = "#3B6FB6"
 AKSEN_HOVER = "#2E5A94"
 AKSEN_TERANG = "#8AB4F8"
 MERAH = "#F47067"
+
+teksAwal = "Hasil prediksi akan tampil di sini"
+daftarEntry = []
+
